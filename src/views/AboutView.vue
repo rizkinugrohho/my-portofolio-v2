@@ -93,7 +93,7 @@ export default {
         {
           id: 3,
           name: 'GitHub',
-          imageUrl: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
+          imageUrl: 'https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png',
           status: 'Git Hosting'
         },
         {
@@ -125,16 +125,13 @@ export default {
   },
   methods: {
     downloadResume() {
-      // Ganti tautan berikut dengan tautan Google Drive yang sesuai
       window.open('https://drive.google.com/file/d/1xpxskcdqM6JSIXW63ZWwpa9dxD0pjOZq/view?usp=sharing', '_blank');
     },
     whatsApp() {
-      // Ganti tautan berikut dengan tautan Google Drive yang sesuai
       window.open('https://api.whatsapp.com/send/?phone=6281586261383&text=Hello%20Rizki%20Nugroho,%20nice%20to%20meet%20you!', '_blank');
     },
     email() {
-      // Ganti tautan berikut dengan tautan Google Drive yang sesuai
-      window.open('mailto:rizkynhg@gmail.com', '_blank');
+      window.open('mailto:rizkynhg@gmail.com?subject=Hello,%20I%20have%20a%20job%20for%20you.', '_blank');
     },
   }
 }
