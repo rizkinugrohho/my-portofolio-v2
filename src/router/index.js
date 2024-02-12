@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ArticleView from '../views/ArticleView.vue';
 
 const routes = [
   {
@@ -41,9 +42,9 @@ const routes = [
   {
     path: '/read/:slug/:id',
     name: 'articleDetail',
-    component: () => import('../views/ArticleView.vue'),
-    meta: { title: 'Blog' }
-  }
+    component: ArticleView,
+    meta: { title: 'Article Detail' },
+  },
 ]
 
 const router = createRouter({
