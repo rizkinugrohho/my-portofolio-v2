@@ -168,7 +168,7 @@ export default {
             My goal is to convey your message and identity in the most creative way. If you are interested in hiring me, please contact the listed contact.
           </p>
           <div class="py-3 flex">
-            <!-- Tombol pertama -->
+            <!-- Tombol pertama 
             <button
         class="fadein-bot fade-500 flex items-center py-2 px-4 text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 text-sky-200 border-sky-200 hover:bg-sky-200 hover:bg-opacity-10 bg-transparent focus:outline-none"
         @click="downloadResume"><svg
@@ -179,8 +179,8 @@ export default {
           <path
             d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z">
           </path>
-        </svg>Download Resume</button>
-        <!-- Tombol Kedua 
+        </svg>Download Resume</button> -->
+        <!-- Tombol Kedua -->
           <button
         class="fadein-bot fade-500 flex items-center py-2 px-4 text-sm font-medium rounded-lg border transition duration-300 md:py-2.5 md:px-5 text-sky-200 border-sky-200 hover:bg-sky-200 hover:bg-opacity-10 bg-transparent focus:outline-none ml-2"
         @click="whatsApp"><svg
@@ -191,7 +191,7 @@ export default {
           <path
             d="M14.25 5.25a5.23 5.23 0 00-1.279-3.434 9.768 9.768 0 016.963 6.963A5.23 5.23 0 0016.5 7.5h-1.875a.375.375 0 01-.375-.375V5.25z">
           </path>
-        </svg>WhatsApp</button>-->
+        </svg>WhatsApp</button>
 
          <!-- Tombol Ketiga -->
          <button
