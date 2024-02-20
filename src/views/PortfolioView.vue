@@ -6,6 +6,14 @@ export default {
       items: [
         {
           id: 1,
+          name: 'Booking Hotel Web',
+          imageUrl: 'portfolio-hotel',
+          status: 'A Simple Hotel Booking Website. This project aims to create a user-friendly platform for booking hotel accommodations.',
+          tech: 'Php, Ajax, Javascript, Boostrap',
+          github: 'https://github.com/rizkinugrohho/booking-hotel',
+        },
+        {
+          id: 2,
           name: 'Personal Website',
           imageUrl: 'portfolio_v2',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
@@ -14,7 +22,7 @@ export default {
           demo: 'rizkinugroho.netlify.app'
         },
         {
-          id: 2,
+          id: 3,
           name: 'Weather App',
           imageUrl: 'weatherapp',
           status: 'Android Mobile Application that shows todays weather and weather forecast for the next 5 days in various cities and countries.',
@@ -23,7 +31,7 @@ export default {
           demo: 'https://github.com/rizkinugrohho/MobileApplication_Weather-App'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Mandiri News App',
           imageUrl: 'mandiri',
           status: 'Challenge from Bank Mandiri - Creating an Android Mobile Application that displays a list of news using API from https://newsapi.org',
@@ -32,7 +40,7 @@ export default {
           demo: 'https://github.com/rizkinugrohho/MobileApplication_MandiriNews'
         },
         {
-          id: 4,
+          id: 5,
           name: 'Progresive Web App React Js',
           imageUrl: 'webapp',
           status: 'a progressive e-commerce web application, which has Push Notification Features, App Banner (Add to Home Screen), Splash screen on the application, Service Worker with Workbox JS.',
@@ -41,7 +49,7 @@ export default {
           demo: 'https://web-apps-phi.vercel.app/'
         },
         {
-          id: 5,
+          id: 6,
           name: 'Bookshelf App',
           imageUrl: 'bookshelf',
           status: 'allows users to search for books, view book details, leave reviews, add books to favorites, and view example categories of books.',
