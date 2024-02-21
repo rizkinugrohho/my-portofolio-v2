@@ -5,9 +5,9 @@
           <h1 class="text-xl md:text-4xl text-black text-left font-bold leading-relaxed">{{ title }}</h1>
           <div class="mt-3 text-left text-gray-800 text-sm">Published at <span>{{ date }}</span></div>
           <div class="h-[2px] w-20 my-5 md:my-10 bg-[#87ceeb] md:w-1/3 aos-init aos-animate mr-2"></div>
-          <div class="relative w-full" style="padding-top: 100%;">
-            <img :src="image" class="absolute top-0 left-0 rounded-lg w-full h-full object-cover"
-              style="object-fit: cover;" alt="Thumbnail">
+          <div class="relative w-full">
+          <img :src="image" class="rounded-lg md:rounded-xl"
+               alt="Thumbnail">
           </div>
         </div>
         <div class="text-left text-black mt-8" v-html="content"></div>
