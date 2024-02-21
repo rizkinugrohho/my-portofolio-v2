@@ -9,7 +9,7 @@
                 <div class="text-xs mb-1 text-slate-400 flex items-center italic">
                   <div class="h-[1px] w-20 bg-sky-200 md:w-5 aos-init aos-animate mr-2"></div> {{ article.date }}
                 </div>
-                <h1 class="text-sm md:text-md text-sky-200 font-bold mb-2 paraf">{{ article.title }}</h1>
+                <h1 class="text-md md:text-lg text-sky-200 font-bold mb-2 paraf">{{ article.title }}</h1>
                 <div class="text-sm hidden md:block paraf">{{ article.desc }}</div>
               </div>
               <div>
