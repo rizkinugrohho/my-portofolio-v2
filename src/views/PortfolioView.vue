@@ -11,6 +11,7 @@ export default {
           status: 'A Simple Hotel Booking Website. This project aims to create a user-friendly platform for booking hotel accommodations.',
           tech: 'Php, Ajax, Javascript, Boostrap',
           github: 'https://github.com/rizkinugrohho/booking-hotel',
+          demo: 'null'
         },
         {
           id: 2,
