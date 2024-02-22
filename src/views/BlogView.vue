@@ -3,7 +3,7 @@
     <div class="flex flex-col-reverse md:flex-row relative">
       <div class="w-full md:w-2/3">
         <div class="flex flex-col gap-4 md:px-20 fade-zoom-up">
-          <article v-for="article in sortedArticles" :key="article.id">
+          <article v-for="article in paginatedArticles" :key="article.id">
             <router-link :to="`/read/${article.slug}/${article.id}`" class="flex w-full bg-[#1e1e1f] border-[#383838] rounded-xl text-left text-white p-5 md:py-7 md:px-8 cursor-pointer hover:bg-[#282828] items-center">
               <div class="w-full pr-4">
                 <div class="text-xs mb-1 text-slate-400 flex items-center italic">
@@ -31,36 +31,58 @@
           <div class="hidden md:block">
             <div class="text-white text-md font-semibold">Topics</div>
             <div class="mt-3 flex flex-wrap gap-1">
-              <span
-                class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">NodeJS</span>
-              <span
-                class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">Technology</span>
+              <span class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">NodeJS</span>
+              <span class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">Technology</span>
             </div>
-            <!-- <div class="h-[1px] mt-7 mb-7 w-20 bg-sky-200 aos-init aos-animate mr-2"></div>
-            <div class="text-white text-md font-semibold">Popular Articles</div> -->
-
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Navigasi pagination -->
+    <nav class="mt-4">
+      <ul class="flex justify-center space-x-4">
+        <li v-if="currentPage > 1">
+          <button @click="changePage(currentPage - 1)" style="color: skyblue;">Previous</button>
+        </li>
+        <li v-for="page in totalPages" :key="page">
+          <button @click="changePage(page)" :class="{ 'font-bold': page === currentPage, ' text-white': page === currentPage, 'text-skyblue': page !== currentPage }" >{{ page }}</button>
+        </li>
+        <li v-if="currentPage < totalPages">
+          <button @click="changePage(currentPage + 1)" style="color: skyblue;">Next</button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Artikel List Component -->
+    <ArticleList />
   </div>
-  <ArticleList />
 </template>
-  
+
 <script>
 import ArticleList from '@/components/ArticleList.vue';
 import axios from "axios";
+
 export default {
   data() {
     return {
-      articles: []
-    }
+      articles: [],
+      currentPage: 1,
+      perPage: 7,
+    };
   },
   computed: {
     sortedArticles() {
-      // Urutkan artikel berdasarkan tanggal secara menurun
       return this.articles.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
-    }
+    },
+    paginatedArticles() {
+      const startIndex = (this.currentPage - 1) * this.perPage;
+      const endIndex = startIndex + this.perPage;
+      return this.sortedArticles.slice(startIndex, endIndex);
+    },
+    totalPages() {
+      return Math.ceil(this.sortedArticles.length / this.perPage);
+    },
   },
   components: {
     ArticleList
@@ -70,15 +92,18 @@ export default {
   },
   methods: {
     async getArticles() {
-      axios.get('https://65cacf49efec34d9ed86526f.mockapi.io/blog')
-        .then(response => {
-          this.articles = response.data;
-        })
+      try {
+        const response = await axios.get('https://65cacf49efec34d9ed86526f.mockapi.io/blog');
+        this.articles = response.data;
+      } catch (error) {
+        console.error("Error fetching articles:", error);
+      }
     },
-
+    changePage(page) {
+      this.currentPage = page;
+    },
   }
 }
-
 </script>
 
 <style scoped>
@@ -105,6 +130,5 @@ export default {
 }
 .fade-zoom-up {
   animation: fadeZoomUp 1s ease-in-out;
-  /* animation-delay: 1000ms; */
 }
 </style>
