@@ -11,7 +11,7 @@ export default {
           status: 'Discover stylish Nike arrivals, quality comfort, and innovation for your active life.',
           tech: 'Vite, React, Tailwind, Javascript, Html, Css',
           github: 'https://github.com/rizkinugrohho/nike-landing-page',
-          demo: 'https://www.tailwindcsspro.com/'
+          demo: 'https://rizkinugrohho.github.io/nike-landing-page/'
         },
         {
           id: 2,
