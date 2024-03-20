@@ -218,7 +218,7 @@ export default {
           data-aos-duration="600"></div>
       </div>
       <section class="container experiences">
-        <div class="experience-item text-base mb-3 md:mb-7 fadein-left fadeins-1">
+        <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Web Developer</p>
           <p class="text-base font-bold">2021 - Present | PT Dutaflow Hidrolik</p>
           <ul class="text-base">
@@ -228,7 +228,7 @@ export default {
             <li>- Doing collaboration with team.</li>
           </ul>
         </div>
-        <div class="experience-item text-base mb-3 fadein-left fadeins-2">
+        <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Mobile Apps Developer Intern</p>
           <p class="text-base font-bold">2023 | Bank Mandiri x Rakamin Academy (Remote)</p>
           <ul class="text-base">
@@ -241,7 +241,7 @@ export default {
             <li>- API (Aplication Programing Interface): Principles of API, Basic Operation of API, Restful API.</li>
           </ul>
         </div>
-        <div class="experience-item text-base mb-3 md:mb-7 fadein-left fadeins-1">
+        <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Freelance Web Developer</p>
           <p class="text-base font-bold">2022 - 2023 | Upwork</p>
           <ul class="text-base">
@@ -381,6 +381,6 @@ export default {
 
 .experience-item {
   padding: 10px;
-  border-left: 1px solid rgba(137, 130, 247, .2)
+  border-left: 1px solid rgba(135, 206, 235, .5)
 }
 </style>
