@@ -152,7 +152,7 @@ export default {
       <section
         class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center">
         <div class="flex justify-center">
-          <img class="w-9/12 rounded-full mb-3 fadein-up" src="https://i.ibb.co/7yVLPPd/Safeimagekit-resized-img.png"
+          <img class="w-9/12 rounded-full mb-3 fadein-up" src="https://i.ibb.co/9q7sfX0/Desain-tanpa-judul-2.png"
             alt="Foto">
         </div>
         <div class="md:w-7/12">
