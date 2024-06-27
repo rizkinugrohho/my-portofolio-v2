@@ -6,6 +6,16 @@ export default {
       items: [
         {
           id: 1,
+          name: 'Laravel Nuxt.js E-Commerce',
+          imageUrl: 'laravel-nuxt',
+          status: 'E-commerce application built with Laravel, Nuxt.js.',
+          tech: 'Python, Vue Js, Tailwind, Css',
+          github: 'https://github.com/rizkinugrohho/nuxt-ecommerce',
+          demo: 'https://www.youtube.com/watch?v=N2I7d__Z1DM',
+          category: 'web'
+        },
+        {
+          id: 2,
           name: 'AI-Driven Web3 Crypto Mine SaintAI',
           imageUrl: 'saint',
           status: 'Website to convert productive generative AI computing power into cryptocurrency mining.',
@@ -15,8 +25,8 @@ export default {
           category: 'web'
         },
         {
-          id: 2,
-          name: 'Laravel-Vue E-Commerce',
+          id: 3,
+          name: 'Laravel Vue.js E-Commerce',
           imageUrl: 'laravel-vue',
           status: 'E-commerce application built with Laravel, Vue.js, Tailwind.css and Alpine.js.',
           tech: 'Laravel, Vue Js, Tailwind, Alphine Js, Html, Css',
@@ -25,7 +35,7 @@ export default {
           category: 'web'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Nike Landing Page',
           imageUrl: 'landingpage',
           status: 'Discover stylish Nike arrivals, quality comfort, and innovation for your active life.',
@@ -35,7 +45,7 @@ export default {
           category: 'web'
         },
         {
-          id: 4,
+          id: 5,
           name: 'Booking Hotel Web',
           imageUrl: 'portfolio-hotel',
           status: 'A Simple Hotel Booking Website. This project aims to create a user-friendly platform for booking hotel accommodations.',
@@ -45,7 +55,7 @@ export default {
           category: 'web'
         },
         {
-          id: 5,
+          id: 6,
           name: 'Personal Website',
           imageUrl: 'portfolio_v2',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
@@ -55,7 +65,7 @@ export default {
           category: 'web'
         },
         {
-          id: 6,
+          id: 7,
           name: 'Weather App',
           imageUrl: 'weatherapp',
           status: 'Android Mobile Application that shows todays weather and weather forecast for the next 5 days in various cities and countries.',
@@ -75,17 +85,17 @@ export default {
           category: 'mobile'
         },
         {
-          id: 8,
+          id: 9,
           name: 'Progresive Web App React Js',
           imageUrl: 'webapp',
-          status: 'a progressive e-commerce web application, which has Push Notification Features, App Banner (Add to Home Screen), Splash screen on the application, Service Worker with Workbox JS.',
+          status: 'a progressive e-commerce web application, App Banner (Add to Home Screen), Service Worker with Workbox JS.',
           tech: 'ReactJs, NodeJs, Tailwind',
           github: 'https://github.com/rizkinugrohho/Web_Apps_With_React_Js',
           demo: 'https://web-apps-phi.vercel.app/',
           category: 'web'
         },
         {
-          id: 9,
+          id: 10,
           name: 'Bookshelf App',
           imageUrl: 'bookshelf',
           status: 'allows users to search for books, view book details, leave reviews, add books to favorites, and view example categories of books.',
