@@ -1,42 +1,15 @@
 <template>
   <div class="container mx-auto p-3 md:p-8">
-    <div class="flex flex-col-reverse md:flex-row relative">
-      <div class="w-full md:w-2/3">
-        <div class="flex flex-col gap-4 md:px-20 fade-zoom-up">
-          <article v-for="article in paginatedArticles" :key="article.id">
-            <router-link :to="`/read/${article.slug}/${article.id}`" class="flex w-full bg-[#1e1e1f] border-[#383838] rounded-xl text-left text-white p-5 md:py-7 md:px-8 cursor-pointer hover:bg-[#282828] items-center">
-              <div class="w-full pr-4">
-                <div class="text-xs mb-1 text-slate-400 flex items-center italic">
-                  <div class="h-[1px] w-20 bg-sky-200 md:w-5 aos-init aos-animate mr-2"></div> {{ article.date }}
-                </div>
-                <h1 class="text-md md:text-lg text-sky-200 font-bold mb-2 paraf">{{ article.title }}</h1>
-                <div class="text-sm hidden md:block paraf">{{ article.desc }}</div>
-              </div>
-              <div>
-                <div class="w-20 h-20 md:w-28 flex items-center md:h-28">
-                  <img :src="article.image" class="rounded-lg md:rounded-xl" alt="">
-                </div>
-              </div>
-            </router-link>
-          </article>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 h-fit p-8 md:sticky md:top-24">
-        <!-- Sidebar -->
-        <div class="flex flex-col text-left">
-          <div class="bg-clip-text bg-gradient-to-r from-slate-100 to-sky-300 text-transparent">Let's share experiences,
-            stories, and knowledge together.
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 auto-rows-fr fade-zoom-up">
+      <article v-for="article in paginatedArticles" :key="article.id">
+        <router-link :to="`/read/${article.slug}/${article.id}`" class="card bg-[#1e1e1f] border-[#383838] rounded-xl text-left text-white hover:bg-[#282828] flex flex-col h-full">
+          <img :src="article.image" alt="thumbnail" class="card-image">
+          <div class="p-4 flex-1 flex flex-col">
+            <h1 class="text-lg md:text-lg text-sky-200 font-bold mb-5">{{ article.title }}</h1>
+            <div class="text-xs mb-1 text-slate-400 italic">{{ article.date }}</div>
           </div>
-          <div class="h-[1px] mt-7 mb-7 w-20 bg-sky-200 aos-init aos-animate mr-2"></div>
-          <div class="hidden md:block">
-            <div class="text-white text-md font-semibold">Topics</div>
-            <div class="mt-3 flex flex-wrap gap-1">
-              <span class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">NodeJS</span>
-              <span class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer">Technology</span>
-            </div>
-          </div>
-        </div>
-      </div>
+        </router-link>
+      </article>
     </div>
 
     <!-- Navigasi pagination -->
@@ -46,7 +19,7 @@
           <button @click="changePage(currentPage - 1)" style="color: skyblue;">Previous</button>
         </li>
         <li v-for="page in totalPages" :key="page">
-          <button @click="changePage(page)" :class="{ 'font-bold': page === currentPage, ' text-white': page === currentPage, 'text-skyblue': page !== currentPage }" >{{ page }}</button>
+          <button @click="changePage(page)" :class="{ 'font-bold': page === currentPage, ' text-white': page === currentPage, 'text-skyblue': page !== currentPage }">{{ page }}</button>
         </li>
         <li v-if="currentPage < totalPages">
           <button @click="changePage(currentPage + 1)" style="color: skyblue;">Next</button>
@@ -68,7 +41,7 @@ export default {
     return {
       articles: [],
       currentPage: 1,
-      perPage: 7,
+      perPage: 6,
     };
   },
   computed: {
@@ -107,16 +80,36 @@ export default {
 </script>
 
 <style scoped>
-.paraf {
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  overflow: hidden;
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: background-color 0.3s;
 }
-@media (min-width: 768px) { 
-  .paraf {
-    display: -webkit-box;
-  }
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.3s ease; /* Tambahkan transition */
+}
+.card:hover .card-image {
+  transform: scale(1.05); /* Efek zoom */
+}
+.card .p-4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.auto-rows-fr {
+  grid-auto-rows: 1fr;
 }
 @keyframes fadeZoomUp {
   0% {
