@@ -10,7 +10,7 @@
                alt="Thumbnail">
           </div>
         </div>
-        <div class="text-left text-black mt-8" v-html="content"></div>
+        <div class="text-left text-black mt-8" v-html="desc"></div>
       </div>
     </div>
   </template>
@@ -40,7 +40,7 @@
             this.title = response.data.title;
             this.image = response.data.image;
             this.date = response.data.date;
-            this.content = response.data.content;
+            this.desc = response.data.desc;
           })
       }
     }
