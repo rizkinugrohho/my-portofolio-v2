@@ -9,7 +9,7 @@ export default {
           name: 'Laravel Nuxt.js E-Commerce',
           imageUrl: 'laravel-nuxt',
           status: 'E-commerce application built with Laravel, Nuxt.js.',
-          tech: 'Python, Vue Js, Tailwind, Css',
+          tech: 'Laravel, Nuxt Js, Vue',
           github: 'https://github.com/rizkinugrohho/nuxt-ecommerce',
           demo: 'https://www.youtube.com/watch?v=N2I7d__Z1DM',
           category: 'web'
