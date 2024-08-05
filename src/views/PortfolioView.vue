@@ -11,7 +11,7 @@ export default {
           status: 'E-commerce application built with Laravel, Nuxt.js.',
           tech: 'Laravel, Nuxt Js, Vue',
           github: 'https://github.com/rizkinugrohho/nuxt-ecommerce',
-          demo: 'https://www.youtube.com/watch?v=N2I7d__Z1DM',
+          demo: 'https://kelompok3spk.vercel.app/',
           category: 'web'
         },
         {
