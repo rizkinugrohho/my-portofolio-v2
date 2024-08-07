@@ -4,8 +4,18 @@ export default {
     return {
       activeTab: 1,
       items: [
-        {
+      {
           id: 1,
+          name: 'Dutaflow Web Company',
+          imageUrl: 'dutaflow',
+          status: 'Website Company Profile.',
+          tech: 'Laravel, Vue Js',
+          github: 'https://dutaflow.com/',
+          demo: 'https://dutaflow.com/',
+          category: 'web'
+        },
+        {
+          id: 2,
           name: 'Laravel Nuxt.js E-Commerce',
           imageUrl: 'laravel-nuxt',
           status: 'E-commerce application built with Laravel, Nuxt.js.',
@@ -15,7 +25,7 @@ export default {
           category: 'web'
         },
         {
-          id: 2,
+          id: 3,
           name: 'AI-Driven Web3 Crypto Mine SaintAI',
           imageUrl: 'saint',
           status: 'Website to convert productive generative AI computing power into cryptocurrency mining.',
@@ -25,7 +35,7 @@ export default {
           category: 'web'
         },
         {
-          id: 3,
+          id: 4,
           name: 'Laravel Vue.js E-Commerce',
           imageUrl: 'laravel-vue',
           status: 'E-commerce application built with Laravel, Vue.js, Tailwind.css and Alpine.js.',
@@ -35,7 +45,7 @@ export default {
           category: 'web'
         },
         {
-          id: 4,
+          id: 5,
           name: 'Nike Landing Page',
           imageUrl: 'landingpage',
           status: 'Discover stylish Nike arrivals, quality comfort, and innovation for your active life.',
@@ -45,7 +55,7 @@ export default {
           category: 'web'
         },
         {
-          id: 5,
+          id: 6,
           name: 'Booking Hotel Web',
           imageUrl: 'portfolio-hotel',
           status: 'A Simple Hotel Booking Website. This project aims to create a user-friendly platform for booking hotel accommodations.',
@@ -55,7 +65,7 @@ export default {
           category: 'web'
         },
         {
-          id: 6,
+          id: 7,
           name: 'Personal Website',
           imageUrl: 'portfolio_v2',
           status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
@@ -65,7 +75,7 @@ export default {
           category: 'web'
         },
         {
-          id: 7,
+          id: 8,
           name: 'Weather App',
           imageUrl: 'weatherapp',
           status: 'Android Mobile Application that shows todays weather and weather forecast for the next 5 days in various cities and countries.',
@@ -75,7 +85,7 @@ export default {
           category: 'mobile'
         },
         {
-          id: 7,
+          id: 9,
           name: 'Mandiri News App',
           imageUrl: 'mandiri',
           status: 'Challenge from Bank Mandiri - Creating an Android Mobile Application that displays a list of news using API from https://newsapi.org',
@@ -85,7 +95,7 @@ export default {
           category: 'mobile'
         },
         {
-          id: 9,
+          id: 10,
           name: 'Progresive Web App React Js',
           imageUrl: 'webapp',
           status: 'a progressive e-commerce web application, App Banner (Add to Home Screen), Service Worker with Workbox JS.',
@@ -95,7 +105,7 @@ export default {
           category: 'web'
         },
         {
-          id: 10,
+          id: 11,
           name: 'Bookshelf App',
           imageUrl: 'bookshelf',
           status: 'allows users to search for books, view book details, leave reviews, add books to favorites, and view example categories of books.',
