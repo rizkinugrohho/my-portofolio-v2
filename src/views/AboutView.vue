@@ -49,7 +49,7 @@ export default {
         {
           id: 8,
           name: 'Codeigniter',
-          imageUrl: 'https://cdn-peanutsquare.b-cdn.net/wp-content/uploads/2022/11/codeigniter-logo.png',
+          imageUrl: 'https://cdn1.iconfinder.com/data/icons/logos-3/304/codeigniter-icon-512.png',
           status: 'Intermediate'
         },
         {
@@ -228,6 +228,21 @@ export default {
             <li>- Doing collaboration with team.</li>
           </ul>
         </div>
+
+        <div class="experience-item text-base mb-3 fadein-left">
+          <p class="text-xl text-sky-200 font-bold">Mobile App Development with React Native Intern</p>
+          <p class="text-base font-bold">2024 | Kominfo</p>
+          <ul class="text-base">
+            <li>This program includes completing various tasks related to Mobile Apps Development With React, such as:</li>
+            <li>- Javascript: Basic Intermediate and Expert.</li>
+            <li>- React: Core Components of React.</li>
+            <li>- React Native and APIs.</li>
+            <li>- Navigation from React Native.</li>
+            <li>- Git: Git Principles, Operations, and Git Features.</li>
+            <li>- API: React Native and API.</li>
+          </ul>
+        </div>
+
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Mobile Apps Developer Intern</p>
           <p class="text-base font-bold">2023 | Bank Mandiri x Rakamin Academy (Remote)</p>
@@ -241,6 +256,7 @@ export default {
             <li>- API (Aplication Programing Interface): Principles of API, Basic Operation of API, Restful API.</li>
           </ul>
         </div>
+
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Freelance Web Developer</p>
           <p class="text-base font-bold">2022 - 2023 | Upwork</p>
