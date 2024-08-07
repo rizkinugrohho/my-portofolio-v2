@@ -230,7 +230,7 @@ export default {
         </div>
 
         <div class="experience-item text-base mb-3 fadein-left">
-          <p class="text-xl text-sky-200 font-bold">Mobile App Development Intern</p>
+          <p class="text-xl text-sky-200 font-bold">Mobile React Developer Intern</p>
           <p class="text-base font-bold">2024 | Kominfo Digitalent</p>
           <ul class="text-base">
             <li>This program includes completing various tasks related to Mobile Apps Development With React, such as:</li>
