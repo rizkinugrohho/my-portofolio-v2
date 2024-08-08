@@ -215,11 +215,11 @@ export default {
         Experiences &nbsp;
       </div>
       <section class="container experiences">
-        <div class="flex items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
-          <div class="item-tech flex gap-2 px-2 py-2 hover hover:bg-opacity-10 md:gap-3 lg:px-3">
-            <div class="flex h-12 w-12 p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
-              <img alt="HTML" loading="lazy" width="32" height="32" decoding="async"
-                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
+        <div class="flex flex-col md:flex-row items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
+          <div class="item-tech flex gap-2 px-2 py-2 hover:bg-opacity-10 md:gap-3 lg:px-3">
+            <div class="flex h-12 w-12 p-0 md:h-16 md:w-16 zoom-in">
+              <img alt="HTML" loading="lazy"
+                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%] object-contain"
                 src="https://media.licdn.com/dms/image/C4D0BAQFyp5sVKNaskw/company-logo_200_200/0/1631333075043?e=2147483647&v=beta&t=4vCHg_BToWKJyyeVi8wpiEziHPLf3qycPhp7n8zAll4"
                 style="color: transparent;">
             </div>
@@ -238,12 +238,12 @@ export default {
         <div class="h-[1px] w-32 bg-sky-200 md:w-98 aos-init aos-animate" data-aos="zoom-in-left"
           data-aos-duration="600"></div><br>
 
-        <div class="flex items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
-          <div class="item-tech flex gap-2 px-2 py-2 hover hover:bg-opacity-10 md:gap-3 lg:px-3">
-            <div class="flex h-12 w-12 p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
-              <img alt="HTML" loading="lazy" width="32" height="32" decoding="async"
-                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                src="https://play-lh.googleusercontent.com/p5E-YoYPD-PUZQw9zb9z4si0JRhkpuivjnEaGYTSoPyv6WyQ4IgVrmARsjXN38KM0Q"
+        <div class="flex flex-col md:flex-row items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
+          <div class="item-tech flex gap-2 px-2 py-2 hover:bg-opacity-10 md:gap-3 lg:px-3">
+            <div class="flex h-12 w-12 p-0 md:h-16 md:w-16 zoom-in">
+              <img alt="HTML" loading="lazy"
+                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%] object-contain"
+                src="https://yt3.googleusercontent.com/MgORPX4mPKaBey4FJEj9Kzm3HBYEK8n8fNZ2vq1YaGeM4GxkVsc3-jI4-GAXfIrrlmrrGClH=s900-c-k-c0x00ffffff-no-rj"
                 style="color: transparent;">
             </div>
             <div class="text-base mb-3 fadein-left"> <!-- Container untuk teks -->
@@ -267,12 +267,12 @@ export default {
         <div class="h-[1px] w-32 bg-sky-200 md:w-98 aos-init aos-animate" data-aos="zoom-in-left"
           data-aos-duration="600"></div><br>
 
-          <div class="flex items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
-          <div class="item-tech flex gap-2 px-2 py-2 hover hover:bg-opacity-10 md:gap-3 lg:px-3">
-            <div class="flex h-12 w-12 p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
-              <img alt="HTML" loading="lazy" width="32" height="32" decoding="async"
-                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKffCM7Op1KQ8VcDv1EokYhSTywz13VG8Wmw&s"
+        <div class="flex flex-col md:flex-row items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
+          <div class="item-tech flex gap-2 px-2 py-2 hover:bg-opacity-10 md:gap-3 lg:px-3">
+            <div class="flex h-12 w-12 p-0 md:h-16 md:w-16 zoom-in">
+              <img alt="HTML" loading="lazy"
+                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%] object-contain"
+                src="https://cdn0-production-images-kly.akamaized.net/mMcP6BkiqFgwi6aSKXHUHLLBIcw=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4255282/original/094712800_1670569941-mandiri.jpg"
                 style="color: transparent;">
             </div>
             <div class="text-base mb-3 fadein-left"> <!-- Container untuk teks -->
@@ -280,28 +280,30 @@ export default {
               <p class="text-base text-sky-200">Bank Mandiri x Rakamin Academy · Internship</p>
               <p class="text-base text-sky-100">Sep 2023 - oct 2023</p>
               <ul class="text-base">
-                <li>The program involves completing various tasks related to Mobile Apps Development for Bank Mandiri, such
-              as:</li>
-            <li>- Android: Environment & Lifecycle, UI and Design Pattern, RecyclerView, and Database.</li>
-            <li>- Kotlin: XML, Gradle, Principles of Kotlin, and OOP.</li>
-            <li>- iOS: Swift, XCode Mastery, UI in iOS, Collections and Localization, and Data Persistence and Web
-              Services.</li>
-            <li>- Unit Testing: Principles of Unit Testing, Unit Testing Tools, Unit Testing Instrument.</li>
-            <li>- Gitlab: Principles of Gitlab, Operation, and Features of Gitlab.</li>
-            <li>- API (Aplication Programing Interface): Principles of API, Basic Operation of API, Restful API.</li>
-          </ul>
+                <li>The program involves completing various tasks related to Mobile Apps Development for Bank Mandiri,
+                  such
+                  as:</li>
+                <li>- Android: Environment & Lifecycle, UI and Design Pattern, RecyclerView, and Database.</li>
+                <li>- Kotlin: XML, Gradle, Principles of Kotlin, and OOP.</li>
+                <li>- iOS: Swift, XCode Mastery, UI in iOS, Collections and Localization, and Data Persistence and Web
+                  Services.</li>
+                <li>- Unit Testing: Principles of Unit Testing, Unit Testing Tools, Unit Testing Instrument.</li>
+                <li>- Gitlab: Principles of Gitlab, Operation, and Features of Gitlab.</li>
+                <li>- API (Aplication Programing Interface): Principles of API, Basic Operation of API, Restful API.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="h-[1px] w-32 bg-sky-200 md:w-98 aos-init aos-animate" data-aos="zoom-in-left"
           data-aos-duration="600"></div><br>
 
-          <div class="flex items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
-          <div class="item-tech flex gap-2 px-2 py-2 hover hover:bg-opacity-10 md:gap-3 lg:px-3">
-            <div class="flex h-12 w-12 p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
-              <img alt="HTML" loading="lazy" width="32" height="32" decoding="async"
-                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                src="https://pangrampangram.com/cdn/shop/articles/442269ac56eddaecd3fa3dd752c38870_1920x.jpg?v=1631828825"
+        <div class="flex flex-col md:flex-row items-center gap-4"> <!-- Flex container untuk gambar dan teks -->
+          <div class="item-tech flex gap-2 px-2 py-2 hover:bg-opacity-10 md:gap-3 lg:px-3">
+            <div class="flex h-12 w-12 p-0 md:h-16 md:w-16 zoom-in">
+              <img alt="HTML" loading="lazy"
+                class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%] object-contain"
+                src="https://www.svgrepo.com/show/331630/upwork.svg"
                 style="color: transparent;">
             </div>
             <div class="text-base mb-3 fadein-left"> <!-- Container untuk teks -->
@@ -310,14 +312,15 @@ export default {
               <p class="text-base text-sky-100">Apr 2022 - Jun 2023</p>
               <ul class="text-base">
                 <li>- Engineered modern applications with Node Js, React JS</li>
-            <li>- Work on application deployment to cloud servers.</li>
-            <li>- Confirmed that completed software met client requirements.</li>
-            <li>- Bug Fixing.</li>
-          </ul>
+                <li>- Work on application deployment to cloud servers.</li>
+                <li>- Confirmed that completed software met client requirements.</li>
+                <li>- Bug Fixing.</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+
 
     </article>
   </div>
@@ -375,7 +378,7 @@ export default {
                 class="item-tech flex cursor-pointer items-center gap-2 rounded border border-sky-200 px-2 py-2 hover:bg-sky-200 hover:bg-opacity-10 md:gap-3 lg:px-3">
                 <div class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in">
                   <img alt="HTML" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
-                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]  "
+                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
                     :src="item.imageUrl" style="color: transparent;">
                 </div>
                 <div class="flex items-center text-sm md:text-base lg:text-lg">
@@ -449,4 +452,9 @@ export default {
   padding: 10px;
   border-left: 1px solid rgba(135, 206, 235, .5)
 }
+
+/* .item-tech img {
+  width: 90px; 
+  height: 90px;
+} */
 </style>
