@@ -105,6 +105,7 @@ module.exports = {
     }),
     borderWidth: {
       DEFAULT: '1px',
+      0.25: '0.50px',
       0: '0px',
       2: '2px',
       4: '4px',
@@ -846,6 +847,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      98 : '70rem',
     },
     stroke: ({ theme }) => ({
       none: 'none',
@@ -876,6 +878,7 @@ module.exports = {
     textUnderlineOffset: {
       auto: 'auto',
       0: '0px',
+      0.25: '0.50px',
       1: '1px',
       2: '2px',
       4: '4px',
