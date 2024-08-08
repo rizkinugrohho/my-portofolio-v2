@@ -220,18 +220,17 @@ export default {
       <section class="container experiences">
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Web Developer</p>
-          <p class="text-base font-bold">2021 - Present | PT Dutaflow Hidrolik</p>
+          <p class="text-base font-bold">Nov 2021 - Present | PT Dutaflow Hidrolik</p>
           <ul class="text-base">
-            <li>- Developing Company Profile using PHP Laravel</li>
-            <li>- Sets up query from database in backend side to fetch with frontend side.</li>
+            <li>- Developing Company Profile using PHP Laravel Frameworks and Vue js</li>
             <li>- Maintenance and fix some bugs.</li>
-            <li>- Doing collaboration with team.</li>
+            <li>- Writing clean, functional code on the front- and back-end...</li>
           </ul>
         </div>
 
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Mobile React Developer Intern</p>
-          <p class="text-base font-bold">2024 | Kominfo Digitalent</p>
+          <p class="text-base font-bold">May 2024 - Jul 2024 | Kominfo Digitalent</p>
           <ul class="text-base">
             <li>This program includes completing various tasks related to Mobile Apps Development With React, such as:</li>
             <li>- Javascript: Basic Intermediate and Expert.</li>
@@ -245,7 +244,7 @@ export default {
 
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Mobile Apps Developer Intern</p>
-          <p class="text-base font-bold">2023 | Bank Mandiri x Rakamin Academy (Remote)</p>
+          <p class="text-base font-bold">Sep 2023 - oct 2023 | Bank Mandiri x Rakamin Academy (Remote)</p>
           <ul class="text-base">
             <li>The program involves completing various tasks related to Mobile Apps Development for Bank Mandiri, such as:</li>
             <li>- Android: Environment & Lifecycle, UI and Design Pattern, RecyclerView, and Database.</li>
@@ -259,7 +258,7 @@ export default {
 
         <div class="experience-item text-base mb-3 fadein-left">
           <p class="text-xl text-sky-200 font-bold">Freelance Web Developer</p>
-          <p class="text-base font-bold">2022 - 2023 | Upwork</p>
+          <p class="text-base font-bold">Apr 2022 - Jun 2023 | Upwork</p>
           <ul class="text-base">
             <li>- Engineered modern applications with Node Js, React JS</li>
             <li>- Work on application deployment to cloud servers.</li>

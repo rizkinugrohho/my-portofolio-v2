@@ -6,9 +6,9 @@ export default {
       items: [
       {
           id: 1,
-          name: 'Dutaflow Web Company',
+          name: 'Website Company Profile',
           imageUrl: 'dutaflow',
-          status: 'Website Company Profile.',
+          status: 'Website Company Profile at PT Dutaflow Hidrolik.',
           tech: 'Laravel, Vue Js',
           github: 'https://dutaflow.com/',
           demo: 'https://dutaflow.com/',
